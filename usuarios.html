@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Usuarios - Ranking Manager</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+<header style="background:#2563eb;color:#fff;padding:18px;font:700 22px Inter,sans-serif;">
+👥 Gestión de Usuarios
+</header>
+
+<div style="max-width:900px;margin:25px auto;padding:20px;">
+
+<div class="login-card">
+
+<h2>Nuevo Usuario</h2>
+
+<input id="nombre" placeholder="Nombre">
+
+<input id="correo" type="email" placeholder="Correo">
+
+<select id="rol" style="width:100%;padding:14px;margin-bottom:15px;border-radius:10px;border:1px solid #cbd5e1;">
+<option value="capturista">Capturista</option>
+<option value="admin">Administrador</option>
+</select>
+
+<button id="crearBtn">Crear Usuario</button>
+
+<p id="msg"></p>
+
+</div>
+
+<h2 style="margin-top:30px;">Usuarios registrados</h2>
+
+<table style="width:100%;background:#fff;border-collapse:collapse;border-radius:10px;overflow:hidden;">
+<thead>
+<tr style="background:#2563eb;color:#fff;">
+<th style="padding:12px;">Nombre</th>
+<th>Rol</th>
+<th>Estado</th>
+</tr>
+</thead>
+
+<tbody id="tablaUsuarios">
+</tbody>
+
+</table>
+
+</div>
+
+<script src="config.js"></script>
+<script src="usuarios.js"></script>
+
+</body>
+</html>

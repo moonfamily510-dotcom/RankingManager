@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ranking Manager - Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{font-family:Inter,sans-serif;background:#f1f5f9;margin:0}
+header{background:#2563eb;color:#fff;padding:18px;font-size:22px;font-weight:700}
+.container{padding:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.card h3{margin:0;color:#64748b;font-size:14px}
+.card p{font-size:28px;font-weight:700;margin:12px 0 0}
+.actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin-top:25px}
+button{padding:15px;border:none;border-radius:12px;background:#2563eb;color:#fff;font-weight:600;cursor:pointer}
+button:hover{background:#1d4ed8}
+</style>
+
+</head>
+
+<body>
+
+<header>🏆 Ranking Manager</header>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+<h3>Usuarios Activos</h3>
+<p id="usuarios">0</p>
+</div>
+
+<div class="card">
+<h3>Total Puntos</h3>
+<p id="puntos">0</p>
+</div>
+
+<div class="card">
+<h3>Top #1</h3>
+<p id="top1">-</p>
+</div>
+
+<div class="card">
+<h3>Registros Hoy</h3>
+<p id="hoy">0</p>
+</div>
+
+</div>
+
+<div class="actions">
+
+<button>➕ Registrar Puntos</button>
+
+<button>🏆 Ranking</button>
+
+<button>👥 Usuarios</button>
+
+<button>⚙ Configuración</button>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="dashboard.js"></script>
+
+</body>
+</html>

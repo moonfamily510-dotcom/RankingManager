@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Registrar Puntos</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+<header style="background:#2563eb;color:#fff;padding:18px;font:700 22px Inter,sans-serif;">
+⭐ Registrar Puntos
+</header>
+
+<div style="max-width:700px;margin:25px auto;">
+
+<div class="login-card">
+
+<label>Usuario</label>
+
+<select id="usuario" style="width:100%;padding:14px;margin:10px 0 15px;border:1px solid #cbd5e1;border-radius:10px;">
+<option>Cargando...</option>
+</select>
+
+<label>Puntos</label>
+
+<input id="puntos" type="number" min="0" max="2000" step="0.01" placeholder="0.00">
+
+<button id="guardarBtn">Guardar Registro</button>
+
+<p id="msg"></p>
+
+</div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="registro.js"></script>
+
+</body>
+</html>
