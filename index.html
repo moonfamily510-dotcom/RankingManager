@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Ranking Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="config.js"></script>
+</head>
+
+<body>
+
+    <div class="login-card">
+
+        <h1>🏆 Ranking Manager</h1>
+
+        <p>Inicia sesión para continuar</p>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Correo electrónico"
+            autocomplete="email"
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Contraseña"
+            autocomplete="current-password"
+        >
+
+        <button id="loginBtn">
+            Iniciar sesión
+        </button>
+
+        <div
+            id="msg"
+            style="
+                margin-top:18px;
+                text-align:center;
+                font-weight:600;
+                min-height:22px;
+            ">
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
